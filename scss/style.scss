@@ -174,6 +174,9 @@
 				position: relative;
 				width: 280px;
 				height: 360px;
+				&:hover .theTeam__slide-foto-overlay {
+						opacity: 1;
+					}
 			}
 			&-overlay {
 				display: flex;
@@ -198,9 +201,6 @@
 					@extend .img_responsive;
 				}
 			}
-			&:hover  &-overlay {
-					opacity: 1;
-				}
 		}
 		&-img {
 			@extend .img_responsive;
