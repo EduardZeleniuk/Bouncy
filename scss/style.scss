@@ -299,7 +299,7 @@
 	}
 	&__foto {
 		display: inline-block;	
-		width: 40%;
+		width: 20%;
 		float: left;
 		&-wrap {
 		display: inline-block;
@@ -307,6 +307,7 @@
 		width: 130px;
 		height: 130px;
 		overflow: hidden;
+		float: right;
 		}
 		&-img {
 			@extend .img_responsive;
@@ -316,7 +317,9 @@
 		display: inline-block;
 		text-align: left;
 		float: right;
-		max-width: 55%;
+		padding-right: 100px; 
+		padding-left: 40px;
+		max-width: 75%;
 		vertical-align: top;
 		line-height: 24px;
 		&-text {
