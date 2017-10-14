@@ -28,29 +28,15 @@ $(function() {
     $('.portfolio__link').removeClass('portfolio__link-active');
     that.addClass('portfolio__link-active');
   }
-  var $portfolio = $('.portfolio__imgs');  
-  $('#all').on('click', function() {
-    remClass($(this));
-    $portfolio.isotope({ filter: $('.portfolio__img-wrap')}); 
-  });
-  $('#web').on('click', function() {
-    remClass($(this));
-    $portfolio.isotope({ filter: $('.web')}); 
-  });
-  $('#print').on('click', function() {
-    remClass($(this));
-    $portfolio.isotope({ filter: $('.print')}); 
-  });
-  $('#branding').on('click', function() {
-    remClass($(this));
-    $portfolio.isotope({ filter: $('.branding')}); 
-  });
-  $('#html').on('click', function() {
-    remClass($(this));
-    $portfolio.isotope({ filter: $('.html')}); 
-  });
 
-
+var $portfolio = $('.portfolio__imgs'); 
+$('a').on('click', function() {
+  var dataId = $(this).attr('data-id');
+  if (dataId) {
+    remClass($(this));
+    $portfolio.isotope({ filter: $(dataId)});
+  }
+});
 
 
 //map

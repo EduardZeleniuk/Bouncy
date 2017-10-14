@@ -291,7 +291,7 @@
 	}
 	&__slider {
 		margin-top: 55px;
-		padding: 50px 40px 60px;
+		padding: 50px 60px 60px;
 		background: #fff;
 	}
 	&__slide{
@@ -299,8 +299,9 @@
 	}
 	&__foto {
 		display: inline-block;	
-		width: 40%;
+		width: 20%;
 		float: left;
+		text-align: right;
 		&-wrap {
 		display: inline-block;
 		border-right: 50%;
@@ -316,7 +317,9 @@
 		display: inline-block;
 		text-align: left;
 		float: right;
-		max-width: 55%;
+		padding-right: 100px; 
+		padding-left: 40px;
+		max-width: 75%;
 		vertical-align: top;
 		line-height: 24px;
 		&-text {
