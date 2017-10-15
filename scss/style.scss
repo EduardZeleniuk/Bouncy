@@ -88,7 +88,7 @@
 	color: #333B46;
 	text-align: center;
 	background: #F3F3F3;
-	padding: 90px 125px 100px;
+	padding: 90px 0 100px;
 	&__title {
 		@extend .header__title-text;
 		font-size: 20px;
@@ -136,10 +136,31 @@
 		}	
 	}
 	&__wrap {
-		width: 105%;
+		width: 1110px;
+		margin: 0 auto;
+		overflow: hidden;
+		@media screen and (max-width: 1110px) {
+			width: 830px;
+		}
+		@media screen and (max-width: 830px) {
+			width: 550px;
+		}
+		@media screen and (max-width: 550px) {
+			width: 270px;
+		}
 	}
 	&__imgs {
 		margin-top: 65px;
+		width: 1120px;
+		@media screen and (max-width: 1110px) {
+			width: 840px;
+		}
+		@media screen and (max-width: 830px) {
+			width: 560px;
+		}
+		@media screen and (max-width: 550px) {
+			width: 280px;
+		}
 	}
 	&__img-wrap {
 		display: block;
@@ -174,9 +195,9 @@
 				position: relative;
 				width: 280px;
 				height: 360px;
-				&:hover  .theTeam__slide-foto-overlay {
-					opacity: 1;
-				}
+				&:hover .theTeam__slide-foto-overlay {
+						opacity: 1;
+					}
 			}
 			&-overlay {
 				display: flex;
@@ -291,7 +312,7 @@
 	}
 	&__slider {
 		margin-top: 55px;
-		padding: 50px 40px 60px;
+		padding: 50px 60px 60px;
 		background: #fff;
 	}
 	&__slide{
@@ -301,6 +322,7 @@
 		display: inline-block;	
 		width: 20%;
 		float: left;
+		text-align: right;
 		&-wrap {
 		display: inline-block;
 		border-right: 50%;

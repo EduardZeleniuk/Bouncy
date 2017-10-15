@@ -39,7 +39,6 @@ $('a').on('click', function() {
 });
 
 
-
 //map
 
 	var directionsDisplay = new google.maps.DirectionsRenderer(),
