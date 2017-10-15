@@ -88,7 +88,7 @@
 	color: #333B46;
 	text-align: center;
 	background: #F3F3F3;
-	padding: 90px 125px 100px;
+	padding: 90px 0 100px;
 	&__title {
 		@extend .header__title-text;
 		font-size: 20px;
@@ -136,10 +136,31 @@
 		}	
 	}
 	&__wrap {
-		width: 105%;
+		width: 1110px;
+		margin: 0 auto;
+		overflow: hidden;
+		@media screen and (max-width: 1110px) {
+			width: 830px;
+		}
+		@media screen and (max-width: 830px) {
+			width: 550px;
+		}
+		@media screen and (max-width: 550px) {
+			width: 270px;
+		}
 	}
 	&__imgs {
 		margin-top: 65px;
+		width: 1120px;
+		@media screen and (max-width: 1110px) {
+			width: 840px;
+		}
+		@media screen and (max-width: 830px) {
+			width: 560px;
+		}
+		@media screen and (max-width: 550px) {
+			width: 280px;
+		}
 	}
 	&__img-wrap {
 		display: block;
